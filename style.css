@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   color: black;
   list-style: none;
   width: 100vw;
   height: 80vh;
-  background: #ffb100;
+  background: #af8727;
   font-family: Sono;
   overflow-x: hidden;
 }
@@ -20,7 +21,7 @@ body {
   padding: 0 2.5rem;
 }
 .bayan {
-  margin-top: 2rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   transition: 0.3s all;
@@ -37,14 +38,14 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-top: 0.2rem solid rgb(172, 43, 43);
+  border-top: 0.5rem solid rgb(29, 133, 27);
   padding: 1rem 0;
 }
 .bayan-title {
   font-size: 2.4rem;
   padding: 0.3rem;
 }
-.bayan__btn {
+.bayan-click {
   width: 2rem;
   height: 2rem;
   transition: all 0.5s;
@@ -62,7 +63,7 @@ body {
   height: 100%;
   object-fit: contain;
 }
-.bayan-input:checked ~ .bayan-lable .bayan__btn {
+.bayan-input:checked ~ .bayan-lable .bayan-click {
   transform: rotate(135deg);
 }
 .bayan-input:checked ~ .bayan-lable > .bayan-img {
@@ -70,10 +71,10 @@ body {
   height: 30rem;
 }
 .bayan-input:checked ~ .bayan-lable > .bayan-title {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 47);
 }
 @media (hover: hover) {
-  .bayan-item:hover > .bayan-lable .bayan__btn {
+  .bayan-item:hover > .bayan-lable .bayan-click {
     transform: rotate(135deg);
   }
   .bayan-item:hover .bayan-img {
@@ -110,7 +111,7 @@ body {
   .bayan-title {
     font-size: 1.3rem;
   }
-  .bayan__btn {
+  .bayan-click {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
