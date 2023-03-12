@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  list-style: none;
+  width: 100vw;
+  height: 80vh;
+  background: #af8727;
+  font-family: Sono;
+  overflow-x: hidden;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 85rem;
+  padding: 0 2.5rem;
+}
+.bayan {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all;
+}
+.bayan-item {
+  display: flex;
+  flex-direction: column;
+}
+.bayan-input {
+  height: 0;
+}
+.bayan-lable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 0.5rem solid rgb(29, 133, 27);
+  padding: 1rem 0;
+}
+.bayan-title {
+  font-size: 2.4rem;
+  padding: 0.3rem;
+}
+.bayan-click {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.5s;
+}
+.bayan-img {
+  margin: 0 auto;
+  background: inherit;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.4s;
+  flex: 1 1 100%;
+}
+.bayan-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bayan-input:checked ~ .bayan-lable .bayan-click {
+  transform: rotate(135deg);
+}
+.bayan-input:checked ~ .bayan-lable > .bayan-img {
+  width: 50%;
+  height: 30rem;
+}
+.bayan-input:checked ~ .bayan-lable > .bayan-title {
+  color: rgb(0, 255, 47);
+}
+@media (hover: hover) {
+  .bayan-item:hover > .bayan-lable .bayan-click {
+    transform: rotate(135deg);
+  }
+  .bayan-item:hover .bayan-img {
+    width: 50%;
+    height: 30rem;
+  }
+  .bayan:hover {
+    color: rgb(97, 84, 84);
+  }
+  .bayan-lable:hover {
+    cursor: pointer;
+  }
+  .bayan-lable:active {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 51.25em) {
+  h1 {
+    margin-left: 0.8rem;
+    font-size: 3rem;
+  }
+  .bayan-title {
+    font-size: 1.8rem;
+  }
+  .container {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 20em) {
+  h1 {
+    font-size: 2rem;
+  }
+  .bayan-title {
+    font-size: 1.3rem;
+  }
+  .bayan-click {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .bayan-input:checked ~ .bayan-lable > .bayan-img {
+    padding: 0.7rem;
+    width: 50%;
+    height: min-content;
+  }
+}
