@@ -7,7 +7,7 @@ body {
   color: black;
   list-style: none;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background: #ffb100;
   font-family: Sono;
   overflow-x: hidden;
@@ -16,40 +16,40 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 75rem;
-  padding: 0 0.5rem;
+  max-width: 85rem;
+  padding: 0 2.5rem;
 }
-.accardion {
+.bayan {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  transition: 0.35s all;
+  transition: 0.3s all;
 }
-.accardion__item {
+.bayan-item {
   display: flex;
   flex-direction: column;
 }
-.accardion__input {
+.bayan-input {
   height: 0;
 }
-.accardion__lable {
+.bayan-lable {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-top: 0.2rem solid rgb(24, 13, 117);
+  border-top: 0.2rem solid rgb(172, 43, 43);
   padding: 1rem 0;
 }
-.accardion__title {
+.bayan-title {
   font-size: 2.4rem;
   padding: 0.3rem;
 }
-.accardion__btn {
+.bayan__btn {
   width: 2rem;
   height: 2rem;
   transition: all 0.5s;
 }
-.accardion-img {
+.bayan-img {
   margin: 0 auto;
   background: inherit;
   overflow: hidden;
@@ -57,36 +57,36 @@ body {
   transition: all 0.4s;
   flex: 1 1 100%;
 }
-.accardion-img img {
+.bayan-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.accardion__input:checked ~ .accardion__lable .accardion__btn {
+.bayan-input:checked ~ .bayan-lable .bayan__btn {
   transform: rotate(135deg);
 }
-.accardion__input:checked ~ .accardion__lable > .accardion-img {
+.bayan-input:checked ~ .bayan-lable > .bayan-img {
   width: 50%;
   height: 30rem;
 }
-.accardion__input:checked ~ .accardion__lable > .accardion__title {
-  color: rgb(104, 37, 192);
+.bayan-input:checked ~ .bayan-lable > .bayan-title {
+  color: rgb(255, 0, 0);
 }
 @media (hover: hover) {
-  .accardion__item:hover > .accardion__lable .accardion__btn {
+  .bayan-item:hover > .bayan-lable .bayan__btn {
     transform: rotate(135deg);
   }
-  .accardion__item:hover .accardion-img {
+  .bayan-item:hover .bayan-img {
     width: 50%;
     height: 30rem;
   }
-  .accardion:hover {
+  .bayan:hover {
     color: rgb(97, 84, 84);
   }
-  .accardion__lable:hover {
+  .bayan-lable:hover {
     cursor: pointer;
   }
-  .accardion__lable:active {
+  .bayan-lable:active {
     opacity: 0.6;
   }
 }
@@ -95,7 +95,7 @@ body {
     margin-left: 0.8rem;
     font-size: 3rem;
   }
-  .accardion__title {
+  .bayan-title {
     font-size: 1.8rem;
   }
   .container {
@@ -107,15 +107,15 @@ body {
   h1 {
     font-size: 2rem;
   }
-  .accardion__title {
+  .bayan-title {
     font-size: 1.3rem;
   }
-  .accardion__btn {
+  .bayan__btn {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
   }
-  .accardion__input:checked ~ .accardion__lable > .accardion-img {
+  .bayan-input:checked ~ .bayan-lable > .bayan-img {
     padding: 0.7rem;
     width: 50%;
     height: min-content;
